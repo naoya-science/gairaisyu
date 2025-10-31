@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外来種ヒントパネル - 11種の生き物</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', 'Noto Sans JP', sans-serif; 
+            background-color: #F8F9FA; 
+        }
+        .gradient-text { 
+            background: linear-gradient(45deg, #10B981, #06B6D4); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        /* 画像読み込みエラー時のスタイル */
+        img[alt$="のイラスト"] {
+            position: relative;
+            background-color: #E0E0E0; /* プレイスホルダー背景色 */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- ナビゲーションバー -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            <a href="#" class="text-2xl font-bold gradient-text">外来種ヒントパネル</a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <div class="container mx-auto px-4 py-16 md:py-24 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold gradient-text">見つけ出せ！ 11の外来種</h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-600">パズルに隠れた生き物たちのヒミツ</p>
+    </div>
+
+    <div class="container mx-auto px-4 pb-16">
+
+        <!-- 外来種ヒントパネル セクション -->
+        <section id="species-list" class="scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">外来種リスト (11種)</h2>
+            
+            <!-- カードグリッド -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- 1. アメリカザリガニ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911098521.jpg" alt="アメリカザリガニのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">条件付特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">アメ●カ●リガニ</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🇺🇸 + 🦞</p>
+                        <p class="text-gray-700 italic">危険が迫ると、自分でハサミや足を切り離して逃げることがある。（自切）</p>
+                    </div>
+                </div>
+
+                <!-- 2. ジャンボタニシ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911102782.jpg" alt="ジャンボタニシのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">生態系被害防止外来種</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ジャ●ボ●ニシ</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🐘(ジャンボ) + 🐚</p>
+                        <p class="text-gray-700 italic">鮮やかなピンク色の卵の塊には毒があり、鳥なども食べない。</p>
+                    </div>
+                </div>
+
+                <!-- 3. シベリアイタチ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="176191111775.jpg" alt="シベリアイタチのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">生態系被害防止外来種</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">シベ●ア●タチ</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🇷🇺(シベリア) + 🐾</p>
+                        <p class="text-gray-700 italic">見た目は可愛らしいが、ニワトリを襲うことも。冬と夏とで毛の色が変わる。</p>
+                    </div>
+                </div>
+
+                <!-- 4. ブラックバス -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911199637.jpg" alt="ブラックバスのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ブ●ッ●バス</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: ⚫️(ブラック) + 🐟</p>
+                        <p class="text-gray-700 italic">正式名は「オオクチバス」。口が大きく、自分より小さな生き物を丸呑みにする。</p>
+                    </div>
+                </div>
+
+                <!-- 5. アカミミガメ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911294787.jpg" alt="アカミミガメのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">条件付特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">アカ●ミ●メ</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🔴(アカ) + 👂(ミミ) + 🐢</p>
+                        <p class="text-gray-700 italic">ペットショップでは「ミドリガメ」の名前で売られていた。耳の後ろの赤い模様が名前の由来。</p>
+                    </div>
+                </div>
+
+                <!-- 6. ヌートリア -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911300022.jpg" alt="ヌートリアのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ヌー●リア</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🐀 + 🦷(キバ)</p>
+                        <p class="text-gray-700 italic">特徴的なオレンジ色の前歯（門歯）は一生伸び続ける。</p>
+                    </div>
+                </div>
+
+                <!-- 7. ハクビシン -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911537721.jpg" alt="ハクビシンのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物 (※)</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ハ●ビ●ン</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: ⚪️(ハク) + 👃(ビ＝鼻)</p>
+                        <p class="text-gray-700 italic">「白鼻芯」と書く。その名の通り、額から鼻先にかけての白い線が最大の特徴。</p>
+                    </div>
+                </div>
+
+                <!-- 8. ブルーギル -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911573985.jpg" alt="ブルーギルのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ブ●ー●ル</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🔵(ブルー) + "Gill"(エラ)</p>
+                        <p class="text-gray-700 italic">「ギル」は「エラ」の意味。エラ蓋の後ろにある青黒い模様が名前の由来。</p>
+                    </div>
+                </div>
+
+                <!-- 9. ワニガメ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911761438.jpg" alt="ワニガメのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">ワ●ガ●</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🐊(ワニ) + 🐢</p>
+                        <p class="text-gray-700 italic">口の中でミミズそっくりの舌を動かし、魚をおびき寄せて捕食する。</p>
+                    </div>
+                </div>
+
+                <!-- 10. カダヤシ -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- 画像パスをファイル名に変更 -->
+                    <img src="1761911776752.jpg" alt="カダヤシのイラスト" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-red-100 text-red-800 px-3 py-1 rounded-full">特定外来生物</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">カ●ヤ●</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🦟(カ) + 🐟</p>
+                        <p class="text-gray-700 italic">「蚊絶やし」が名前の由来。ボウフラを食べる益魚として日本に持ち込まれた。</p>
+                    </div>
+                </div>
+
+                <!-- 11. グッピー -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <!-- ▼▼▼ ここをグッピーのファイル名に書き換えてください ▼▼▼ -->
+                    <img src="YOUR_GUPPY_FILENAME.jpg" alt="グッピーのイラスト" class="w-full h-48 object-cover">
+                    <!-- ▲▲▲ ここをグッピーのファイル名に書き換えてください ▲▲▲ -->
+                    <div class="p-6">
+                        <div class="mb-3">
+                            <span class="text-lg font-semibold bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">生態系被害防止外来種</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">グ●ピー</h4>
+                        <p class="text-xl font-bold text-emerald-600 mb-3">ヒント: 🐠(熱帯魚)</p>
+                        <p class="text-gray-700 italic">「ミリオンフィッシュ」と呼ばれるほど、非常にたくさん子供を産む。</p>
+                    </div>
+                </div>
+
+            </div> <!-- end grid -->
+        </section>
+
+        <!-- 注釈セクション -->
+        <section id="annotation" class="mt-16 pt-8 border-t border-gray-300">
+            <h3 class="text-lg font-semibold text-gray-700 mb-3">※危険度レベルについて</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                このパネルでの危険度分類は、環境省の「外来生物法」に基づいています。
+            </p>
+            <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                <li><span class="font-semibold text-red-700">特定外来生物:</span> 生態系や農作物に甚大な被害を及ぼすため、法律で飼育・輸入・運搬などが原則禁止されています。（例：ブラックバス、ヌートリア）</li>
+                <li><span class="font-semibold text-red-700">条件付特定外来生物:</span> 特定外来生物の一部ですが、ペットとしての飼育が広く普及しているため、一部の規制（販売・放出の禁止など）が適用されます。（例：アメリカザリガニ、アカミミガメ）</li>
+                <li><span class="font-semibold text-yellow-700">生態系被害防止外来種:</span> 法律による規制はありませんが、生態系への影響が懸念され、注意喚起が行われている生物です。（例：ジャンボタニシ、グッピー）</li>
+                <li>(※) ハクビシンは外来生物法上の指定はありませんが、農作物被害が深刻なため「重点対策外来種」として扱われることがあり、ここでは特定外来生物に準じています。</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2024 Alien Species Hint Panel. (Design based on GAIA)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Iconsは使用しなくなったため、スクリプトは不要です。
+    </script>
+</body>
+</html>
+
